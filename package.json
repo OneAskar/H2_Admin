@@ -44,7 +44,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "test -d /home/h2-research/htdocs/h2-research.site && rm -rf /home/h2-research/htdocs/h2-research.site/admin-app && mkdir -p /home/h2-research/htdocs/h2-research.site/admin-app && cp -r build/. /home/h2-research/htdocs/h2-research.site/admin-app/ && find /home/h2-research/htdocs/h2-research.site/admin-app -type d -exec chmod 755 {} + && find /home/h2-research/htdocs/h2-research.site/admin-app -type f -exec chmod 644 {} + || true"
   },
   "eslintConfig": {
     "extends": [
