@@ -291,7 +291,7 @@ const DashboardHome = ({ data, refetchData }) => {
                             variant="caption"
                             className={css.vendor_top_label_bl}
                         >
-                            , Welcome to your{" "}
+                            , Welcome to your your{" "}
                             <Typography
                                 variant="caption"
                                 className={`grediant_txt ${css.vendor_top_label_or}`}
